@@ -44,7 +44,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 //adminSeeder
-adminSeeder()
+// adminSeeder()
 
 //route import
 const authRoute = require("./src/routes/authRoute");
