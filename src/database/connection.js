@@ -33,7 +33,7 @@ db.inquiries.hasOne(db.bills, { foreignKey: "inquiryId", as: "bill" });
 
 // Sync database
 db.sequelize
-  .sync({ force: false })
+  .sync({ alter: false })
   .then(() => console.log("Database synced successfully"))
   .catch((err) => console.error("Database sync failed", err));
 
